@@ -1,0 +1,189 @@
+Subject: [PATCH] вывод в консоль разными
+---
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/.gitignore	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/.idea/.gitignore	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/.idea/misc.xml	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/.idea/modules.xml	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/ConcolWriting.iml" filepath="$PROJECT_DIR$/ConcolWriting.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/.idea/vcs.xml	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ConcolWriting.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ConcolWriting.iml b/ConcolWriting.iml
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/ConcolWriting.iml	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: src/ColorConsole.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ColorConsole.java b/src/ColorConsole.java
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/src/ColorConsole.java	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,16 @@
++public class ColorConsole {
++
++    public static final String RESET = "\033[0m";  // Text Reset
++    public static final String BLACK = "\033[0;30m";   // BLACK
++    public static final String RED = "\033[0;31m";     // RED
++    public static final String GREEN = "\033[0;32m";   // GREEN
++    public static final String YELLOW = "\033[0;33m";  // YELLOW
++    public static final String BLUE = "\033[0;34m";    // BLUE
++    public static final String PURPLE = "\033[0;35m";  // PURPLE
++    public static final String CYAN = "\033[0;36m";    // CYAN
++    public static final String WHITE = "\033[0;37m";   // WHITE
++
++    public static void printColor(String color, String text) {
++        System.out.println(color + text + RESET);
++    }
++}
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+new file mode 100644
+--- /dev/null	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
++++ b/src/Main.java	(revision ff9c69de7fd76f1fb35686745c2d9ef5784269ad)
+@@ -0,0 +1,17 @@
++//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
++// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
++
++
++public class Main {
++    public static void main(String[] args) {
++        ColorConsole.printColor(ColorConsole.RED, "Это красный текст");
++        ColorConsole.printColor(ColorConsole.GREEN, "Это зеленый текст");
++        ColorConsole.printColor(ColorConsole.BLACK, "Это черный  текст");
++        ColorConsole.printColor(ColorConsole.YELLOW, "Это желтый  текст");
++        ColorConsole.printColor(ColorConsole.BLUE, "Это голубой  текст");
++        ColorConsole.printColor(ColorConsole.PURPLE, "Это фиолетовый  текст");
++        ColorConsole.printColor(ColorConsole.CYAN, "Это аквамариновый  текст");
++        ColorConsole.printColor(ColorConsole.WHITE, "Это белый  текст");
++
++    }
++}
+\ No newline at end of file
